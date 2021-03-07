@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../main.css">
+    <title>Data visualisation</title>
+</head>
+
+<body>
+    {{> navbar}}
+    <div class="dropdown">
+  <button class="dropbtn">Choose entity</button>
+  <div class="dropdown-content">
+    <a href="/filter/students">Students</a>
+    <a href="/filter/marks">Marks</a>
+    <a href="/filter/subjects">Subjects</a>
+    <a href="/filter/topics">Topic</a>
+  </div>
+</div>
+    <div class="container fullscreen dark">
+        <div class="filter-secton">
+        <form class="filter-form" action="/filter/students/" method="GET">
+        <table class="filter-table">
+                    <tr>
+                        <td>
+                        <a>Фильтрация по определенному id</a>
+                        <input class="input-id" type="text" name="iddef">
+                        </td>
+                        <td colspan=2>
+                        <a>Фильтрация по интервалу id</a>
+                        <input class="input-id-range-left" type="text" name="idleft">
+                        <input class="input-id-range-right" type="text" name="idright">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a>Фильтрация по значению фамилии</a>
+                        <input class="input-surname" type="text" name="surdef">
+                        </td>
+                        <td>
+                        <a>Фильтрация по началу фамилии</a>
+                        <input class="input-surname-start" type="text" name="surstart">
+                        </td>
+                        <td>
+                        <a>Фильтрация по концу фамилии</a>
+                        <input class="input-surname-end" type="text" name="surend">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a>Фильтрация по значению имени</a>
+                        <input class="input-name" type="text" name="namedef">
+                        </td>
+                        <td>
+                        <a>Фильтрация по началу имени</a>
+                        <input class="input-name-start" type="text" name="namestart">
+                        </td>
+                        <td>
+                        <a>Фильтрация по концу имени</a>
+                        <input class="input-name-end" type="text" name="nameend">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a>Фильтрация по значению отчества</a>
+                        <input class="input-patronymic" type="text" name="patdef">
+                        </td>
+                        <td>
+                        <a>Фильтрация по началу отчества</a>
+                        <input class="input-patronymic-start" type="text" name="patstart">
+                        </td>
+                        <td>
+                        <a>Фильтрация по концу отчества</a>
+                        <input class="input-patronymic-end" type="text" name="patend">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a>Фильтрация по определенному возрасту</a>
+                        <input class="input-age" type="text" name="agedef">
+                        </td>
+                        <td colspan=2>
+                        <a>Фильтрация по интервалу возрастов</a>
+                        <input class="input-age-range-left" type="text" name="ageleft">
+                        <input class="input-age-range-right" type="text" name="ageright">
+                        </td>
+                    </tr>
+            </table>
+            <div class="buttons">
+            <input type="submit" class="filterbtn" value="Filter">
+            <a class="analyzebtn" href="/anal_itics">Static analyze</a>
+            </div>
+            <form>
+        </div>
+        <div class="output">
+            <table>
+                <tbody>
+                    {{#data}}
+            <tr>
+                <td>{{id}}</td>
+                <td>{{surname}}</td>
+                <td>{{name}}</td>
+                <td>{{patronymic}}</td>
+                <td>{{age}}</td>
+            </tr>
+            {{/data}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+                        let inputid = document.getElementsByClassName("input-id")[0];
+                        let inputidLeft = document.getElementsByClassName("input-id-range-left")[0];
+                        let inputidRight = document.getElementsByClassName("input-id-range-right")[0];
+                        let surname = document.getElementsByClassName("input-surname")[0];
+                        let surnameStart = document.getElementsByClassName("input-surname-start")[0];
+                        let surnameEnd = document.getElementsByClassName("input-surname-end")[0];
+                        let name = document.getElementsByClassName("input-name")[0];
+                        let nameStart = document.getElementsByClassName("input-name-start")[0];
+                        let nameEnd = document.getElementsByClassName("input-name-end")[0];
+                        let patr = document.getElementsByClassName("input-patronymic")[0];
+                        let patrStart = document.getElementsByClassName("input-patronymic-start")[0];
+                        let patrEnd = document.getElementsByClassName("input-patronymic-end")[0];
+                        let inputage = document.getElementsByClassName("input-age")[0];
+                        let inputageLeft = document.getElementsByClassName("input-age-range-left")[0];
+                        let inputageRight = document.getElementsByClassName("input-age-range-right")[0];
+                            inputid.oninput = function() {
+                                if(inputid.value){
+                                    inputidLeft.disabled = true;
+                                    inputidRight.disabled = true;
+                                    inputidLeft.value = "";
+                                    inputidRight.value = "";
+                                }
+                                else{
+                                    inputidLeft.disabled = false;
+                                    inputidRight.disabled = false;
+                                }
+                        };
+                        inputidLeft.oninput = function() {
+                                if(inputidLeft.value || inputidRight.value){
+                                    inputid.disabled = true;
+                                    inputid.value = "";
+                                }
+                                else{
+                                    inputid.disabled = false;
+                                }
+                        };
+                        inputidRight.oninput = function() {
+                                if(inputidLeft.value || inputidRight.value){
+                                    inputid.disabled = true;
+                                    inputid.value = "";
+                                }
+                                else{
+                                    inputid.disabled = false;
+                                }
+                        };
+                        surname.oninput = function() {
+                                if(surname.value){
+                                    surnameStart.disabled = true;
+                                    surnameEnd.disabled = true;
+                                    surnameStart.value = "";
+                                    surnameEnd.value = "";
+                                }
+                                else{
+                                    surnameStart.disabled = false;
+                                    surnameEnd.disabled = false;
+                                }
+                        };
+                        surnameStart.oninput = function() {
+                                if(surnameStart.value){
+                                    surname.disabled = true;
+                                    surnameEnd.disabled = true;
+                                    surname.value = "";
+                                    surnameEnd.value = "";
+                                }
+                                else{
+                                    surnameEnd.disabled = false;
+                                    surname.disabled = false;
+                                }
+                        };
+                        surnameEnd.oninput = function() {
+                                if(surnameEnd.value){
+                                    surname.disabled = true;
+                                    surnameStart.disabled = true;
+                                    surname.value = "";
+                                    surnameStart.value = "";
+                                }
+                                else{
+                                    surnameStart.disabled = false;
+                                    surname.disabled = false;
+                                }
+                        };
+                        name.oninput = function() {
+                                if(name.value){
+                                    nameStart.disabled = true;
+                                    nameEnd.disabled = true;
+                                    nameStart.value = "";
+                                    nameEnd.value = "";
+                                }
+                                else{
+                                    nameStart.disabled = false;
+                                    nameEnd.disabled = false;
+                                }
+                        };
+                        nameStart.oninput = function() {
+                                if(nameStart.value){
+                                    name.disabled = true;
+                                    nameEnd.disabled = true;
+                                    name.value = "";
+                                    nameEnd.value = "";
+                                }
+                                else{
+                                    nameEnd.disabled = false;
+                                    name.disabled = false;
+                                }
+                        };
+                        nameEnd.oninput = function() {
+                                if(nameEnd.value){
+                                    name.disabled = true;
+                                    nameStart.disabled = true;
+                                    name.value = "";
+                                    nameStart.value = "";
+                                }
+                                else{
+                                    nameStart.disabled = false;
+                                    name.disabled = false;
+                                }
+                        };
+                        patr.oninput = function() {
+                                if(patr.value){
+                                    patrStart.disabled = true;
+                                    patrEnd.disabled = true;
+                                    patrStart.value = "";
+                                    patrEnd.value = "";
+                                }
+                                else{
+                                    patrStart.disabled = false;
+                                    patrEnd.disabled = false;
+                                }
+                        };
+                        patrStart.oninput = function() {
+                                if(patrStart.value){
+                                    patr.disabled = true;
+                                    patrEnd.disabled = true;
+                                    patr.value = "";
+                                    patrEnd.value = "";
+                                }
+                                else{
+                                    patrEnd.disabled = false;
+                                    patr.disabled = false;
+                                }
+                        };
+                        patrEnd.oninput = function() {
+                                if(patrEnd.value){
+                                    patr.disabled = true;
+                                    patrStart.disabled = true;
+                                    patr.value = "";
+                                    patrStart.value = "";
+                                }
+                                else{
+                                    patrStart.disabled = false;
+                                    patr.disabled = false;
+                                }
+                        };
+                        inputage.oninput = function() {
+                                if(inputage.value){
+                                    inputageLeft.disabled = true;
+                                    inputageRight.disabled = true;
+                                    inputageLeft.value = "";
+                                    inputageRight.value = "";
+                                }
+                                else{
+                                    inputageLeft.disabled = false;
+                                    inputageRight.disabled = false;
+                                }
+                        };
+                        inputageLeft.oninput = function() {
+                                if(inputageLeft.value || inputageRight.value){
+                                    inputage.disabled = true;
+                                    inputage.value = "";
+                                }
+                                else{
+                                    inputage.disabled = false;
+                                }
+                        };
+                        inputageRight.oninput = function() {
+                                if(inputageLeft.value || inputageRight.value){
+                                    inputage.disabled = true;
+                                    inputage.value = "";
+                                }
+                                else{
+                                    inputage.disabled = false;
+                                }
+                        };
+                        </script>
+</body>
+
+</html>

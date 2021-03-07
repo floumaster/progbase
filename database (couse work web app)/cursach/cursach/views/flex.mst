@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../main.css">
+    <title>Data visualisation</title>
+</head>
+<body>
+    {{> navbar}}
+    <div class="container fullscreen dark">
+    <img class="flex" src="./flex.gif" alt="альтернативный текст">
+</body>
+
+</html>

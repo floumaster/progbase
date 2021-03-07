@@ -1,0 +1,682 @@
+[
+    {
+        "id": 7315,
+        "score": 8,
+        "date": "2010-11-14T00:00:00.000Z",
+        "studentId": 10504,
+        "subjectId": 35,
+        "topicId": 78
+    },
+    {
+        "id": 7449,
+        "score": 8,
+        "date": "2010-11-18T00:00:00.000Z",
+        "studentId": 10598,
+        "subjectId": 25,
+        "topicId": 34
+    },
+    {
+        "id": 22406,
+        "score": 8,
+        "date": "2010-11-12T00:00:00.000Z",
+        "studentId": 10315,
+        "subjectId": 11,
+        "topicId": 60
+    },
+    {
+        "id": 54549,
+        "score": 8,
+        "date": "2010-11-19T00:00:00.000Z",
+        "studentId": 10273,
+        "subjectId": 35,
+        "topicId": 102
+    },
+    {
+        "id": 26684,
+        "score": 8,
+        "date": "2010-11-14T00:00:00.000Z",
+        "studentId": 11130,
+        "subjectId": 25,
+        "topicId": 96
+    },
+    {
+        "id": 56166,
+        "score": 8,
+        "date": "2010-11-14T00:00:00.000Z",
+        "studentId": 11073,
+        "subjectId": 37,
+        "topicId": 2
+    },
+    {
+        "id": 102365,
+        "score": 8,
+        "date": "2010-11-19T00:00:00.000Z",
+        "studentId": 10299,
+        "subjectId": 26,
+        "topicId": 11
+    },
+    {
+        "id": 67329,
+        "score": 8,
+        "date": "2010-11-12T00:00:00.000Z",
+        "studentId": 10727,
+        "subjectId": 33,
+        "topicId": 4
+    },
+    {
+        "id": 56513,
+        "score": 8,
+        "date": "2010-11-19T00:00:00.000Z",
+        "studentId": 10247,
+        "subjectId": 35,
+        "topicId": 7
+    },
+    {
+        "id": 62728,
+        "score": 8,
+        "date": "2010-11-13T00:00:00.000Z",
+        "studentId": 11187,
+        "subjectId": 36,
+        "topicId": 85
+    },
+    {
+        "id": 71102,
+        "score": 8,
+        "date": "2010-11-13T00:00:00.000Z",
+        "studentId": 10644,
+        "subjectId": 11,
+        "topicId": 72
+    },
+    {
+        "id": 100279,
+        "score": 8,
+        "date": "2010-11-16T00:00:00.000Z",
+        "studentId": 10916,
+        "subjectId": 27,
+        "topicId": 10
+    },
+    {
+        "id": 207416,
+        "score": 8,
+        "date": "2010-11-19T00:00:00.000Z",
+        "studentId": 10445,
+        "subjectId": 15,
+        "topicId": 27
+    },
+    {
+        "id": 124669,
+        "score": 8,
+        "date": "2010-11-18T00:00:00.000Z",
+        "studentId": 10351,
+        "subjectId": 14,
+        "topicId": 50
+    },
+    {
+        "id": 142820,
+        "score": 8,
+        "date": "2010-11-14T00:00:00.000Z",
+        "studentId": 10975,
+        "subjectId": 8,
+        "topicId": 21
+    },
+    {
+        "id": 153852,
+        "score": 8,
+        "date": "2010-11-19T00:00:00.000Z",
+        "studentId": 10376,
+        "subjectId": 3,
+        "topicId": 89
+    },
+    {
+        "id": 166474,
+        "score": 8,
+        "date": "2010-11-15T00:00:00.000Z",
+        "studentId": 10777,
+        "subjectId": 18,
+        "topicId": 38
+    },
+    {
+        "id": 293832,
+        "score": 8,
+        "date": "2010-11-19T00:00:00.000Z",
+        "studentId": 11196,
+        "subjectId": 16,
+        "topicId": 94
+    },
+    {
+        "id": 261523,
+        "score": 8,
+        "date": "2010-11-12T00:00:00.000Z",
+        "studentId": 10567,
+        "subjectId": 25,
+        "topicId": 86
+    },
+    {
+        "id": 284510,
+        "score": 8,
+        "date": "2010-11-15T00:00:00.000Z",
+        "studentId": 11198,
+        "subjectId": 28,
+        "topicId": 45
+    },
+    {
+        "id": 217934,
+        "score": 8,
+        "date": "2010-11-13T00:00:00.000Z",
+        "studentId": 10621,
+        "subjectId": 34,
+        "topicId": 57
+    },
+    {
+        "id": 226796,
+        "score": 8,
+        "date": "2010-11-12T00:00:00.000Z",
+        "studentId": 10902,
+        "subjectId": 8,
+        "topicId": 81
+    },
+    {
+        "id": 252907,
+        "score": 8,
+        "date": "2010-11-15T00:00:00.000Z",
+        "studentId": 10519,
+        "subjectId": 2,
+        "topicId": 74
+    },
+    {
+        "id": 285530,
+        "score": 8,
+        "date": "2010-11-19T00:00:00.000Z",
+        "studentId": 10258,
+        "subjectId": 26,
+        "topicId": 56
+    },
+    {
+        "id": 296844,
+        "score": 8,
+        "date": "2010-11-17T00:00:00.000Z",
+        "studentId": 11031,
+        "subjectId": 15,
+        "topicId": 89
+    },
+    {
+        "id": 373405,
+        "score": 8,
+        "date": "2010-11-14T00:00:00.000Z",
+        "studentId": 10255,
+        "subjectId": 36,
+        "topicId": 51
+    },
+    {
+        "id": 313316,
+        "score": 8,
+        "date": "2010-11-16T00:00:00.000Z",
+        "studentId": 10682,
+        "subjectId": 37,
+        "topicId": 22
+    },
+    {
+        "id": 333289,
+        "score": 8,
+        "date": "2010-11-12T00:00:00.000Z",
+        "studentId": 11013,
+        "subjectId": 32,
+        "topicId": 3
+    },
+    {
+        "id": 338666,
+        "score": 8,
+        "date": "2010-11-15T00:00:00.000Z",
+        "studentId": 10817,
+        "subjectId": 21,
+        "topicId": 11
+    },
+    {
+        "id": 364484,
+        "score": 8,
+        "date": "2010-11-19T00:00:00.000Z",
+        "studentId": 11066,
+        "subjectId": 31,
+        "topicId": 39
+    },
+    {
+        "id": 390137,
+        "score": 8,
+        "date": "2010-11-16T00:00:00.000Z",
+        "studentId": 11003,
+        "subjectId": 23,
+        "topicId": 10
+    },
+    {
+        "id": 407629,
+        "score": 8,
+        "date": "2010-11-13T00:00:00.000Z",
+        "studentId": 10580,
+        "subjectId": 7,
+        "topicId": 27
+    },
+    {
+        "id": 391464,
+        "score": 8,
+        "date": "2010-11-18T00:00:00.000Z",
+        "studentId": 10349,
+        "subjectId": 3,
+        "topicId": 23
+    },
+    {
+        "id": 419418,
+        "score": 8,
+        "date": "2010-11-12T00:00:00.000Z",
+        "studentId": 10556,
+        "subjectId": 25,
+        "topicId": 59
+    },
+    {
+        "id": 453086,
+        "score": 8,
+        "date": "2010-11-17T00:00:00.000Z",
+        "studentId": 10926,
+        "subjectId": 16,
+        "topicId": 84
+    },
+    {
+        "id": 444484,
+        "score": 8,
+        "date": "2010-11-16T00:00:00.000Z",
+        "studentId": 11027,
+        "subjectId": 33,
+        "topicId": 66
+    },
+    {
+        "id": 454449,
+        "score": 8,
+        "date": "2010-11-17T00:00:00.000Z",
+        "studentId": 10388,
+        "subjectId": 12,
+        "topicId": 14
+    },
+    {
+        "id": 453759,
+        "score": 8,
+        "date": "2010-11-17T00:00:00.000Z",
+        "studentId": 10693,
+        "subjectId": 13,
+        "topicId": 60
+    },
+    {
+        "id": 472533,
+        "score": 8,
+        "date": "2010-11-13T00:00:00.000Z",
+        "studentId": 11019,
+        "subjectId": 17,
+        "topicId": 70
+    },
+    {
+        "id": 459186,
+        "score": 8,
+        "date": "2010-11-13T00:00:00.000Z",
+        "studentId": 10910,
+        "subjectId": 21,
+        "topicId": 88
+    },
+    {
+        "id": 558584,
+        "score": 8,
+        "date": "2010-11-16T00:00:00.000Z",
+        "studentId": 11094,
+        "subjectId": 36,
+        "topicId": 98
+    },
+    {
+        "id": 483611,
+        "score": 8,
+        "date": "2010-11-13T00:00:00.000Z",
+        "studentId": 10262,
+        "subjectId": 10,
+        "topicId": 16
+    },
+    {
+        "id": 491303,
+        "score": 8,
+        "date": "2010-11-18T00:00:00.000Z",
+        "studentId": 10496,
+        "subjectId": 2,
+        "topicId": 52
+    },
+    {
+        "id": 542805,
+        "score": 8,
+        "date": "2010-11-13T00:00:00.000Z",
+        "studentId": 10390,
+        "subjectId": 5,
+        "topicId": 5
+    },
+    {
+        "id": 553432,
+        "score": 8,
+        "date": "2010-11-19T00:00:00.000Z",
+        "studentId": 10669,
+        "subjectId": 8,
+        "topicId": 39
+    },
+    {
+        "id": 562198,
+        "score": 8,
+        "date": "2010-11-18T00:00:00.000Z",
+        "studentId": 10787,
+        "subjectId": 4,
+        "topicId": 78
+    },
+    {
+        "id": 591184,
+        "score": 8,
+        "date": "2010-11-19T00:00:00.000Z",
+        "studentId": 11216,
+        "subjectId": 5,
+        "topicId": 51
+    },
+    {
+        "id": 567239,
+        "score": 8,
+        "date": "2010-11-15T00:00:00.000Z",
+        "studentId": 10540,
+        "subjectId": 6,
+        "topicId": 64
+    },
+    {
+        "id": 621191,
+        "score": 8,
+        "date": "2010-11-16T00:00:00.000Z",
+        "studentId": 10875,
+        "subjectId": 16,
+        "topicId": 56
+    },
+    {
+        "id": 612087,
+        "score": 8,
+        "date": "2010-11-17T00:00:00.000Z",
+        "studentId": 10653,
+        "subjectId": 28,
+        "topicId": 94
+    },
+    {
+        "id": 603818,
+        "score": 8,
+        "date": "2010-11-14T00:00:00.000Z",
+        "studentId": 10595,
+        "subjectId": 29,
+        "topicId": 54
+    },
+    {
+        "id": 604600,
+        "score": 8,
+        "date": "2010-11-13T00:00:00.000Z",
+        "studentId": 11198,
+        "subjectId": 16,
+        "topicId": 62
+    },
+    {
+        "id": 611598,
+        "score": 8,
+        "date": "2010-11-16T00:00:00.000Z",
+        "studentId": 10769,
+        "subjectId": 34,
+        "topicId": 88
+    },
+    {
+        "id": 659949,
+        "score": 8,
+        "date": "2010-11-13T00:00:00.000Z",
+        "studentId": 10621,
+        "subjectId": 24,
+        "topicId": 10
+    },
+    {
+        "id": 728548,
+        "score": 8,
+        "date": "2010-11-13T00:00:00.000Z",
+        "studentId": 10665,
+        "subjectId": 37,
+        "topicId": 19
+    },
+    {
+        "id": 662168,
+        "score": 8,
+        "date": "2010-11-15T00:00:00.000Z",
+        "studentId": 10327,
+        "subjectId": 30,
+        "topicId": 93
+    },
+    {
+        "id": 713306,
+        "score": 8,
+        "date": "2010-11-16T00:00:00.000Z",
+        "studentId": 11048,
+        "subjectId": 36,
+        "topicId": 100
+    },
+    {
+        "id": 757353,
+        "score": 8,
+        "date": "2010-11-15T00:00:00.000Z",
+        "studentId": 10441,
+        "subjectId": 26,
+        "topicId": 101
+    },
+    {
+        "id": 742335,
+        "score": 8,
+        "date": "2010-11-13T00:00:00.000Z",
+        "studentId": 10540,
+        "subjectId": 16,
+        "topicId": 39
+    },
+    {
+        "id": 741364,
+        "score": 8,
+        "date": "2010-11-14T00:00:00.000Z",
+        "studentId": 10863,
+        "subjectId": 12,
+        "topicId": 88
+    },
+    {
+        "id": 767582,
+        "score": 8,
+        "date": "2010-11-15T00:00:00.000Z",
+        "studentId": 10876,
+        "subjectId": 10,
+        "topicId": 100
+    },
+    {
+        "id": 777335,
+        "score": 8,
+        "date": "2010-11-19T00:00:00.000Z",
+        "studentId": 10747,
+        "subjectId": 20,
+        "topicId": 10
+    },
+    {
+        "id": 809706,
+        "score": 8,
+        "date": "2010-11-18T00:00:00.000Z",
+        "studentId": 10965,
+        "subjectId": 22,
+        "topicId": 20
+    },
+    {
+        "id": 801701,
+        "score": 8,
+        "date": "2010-11-19T00:00:00.000Z",
+        "studentId": 10748,
+        "subjectId": 13,
+        "topicId": 89
+    },
+    {
+        "id": 777944,
+        "score": 8,
+        "date": "2010-11-18T00:00:00.000Z",
+        "studentId": 10823,
+        "subjectId": 3,
+        "topicId": 53
+    },
+    {
+        "id": 832927,
+        "score": 8,
+        "date": "2010-11-19T00:00:00.000Z",
+        "studentId": 11150,
+        "subjectId": 3,
+        "topicId": 38
+    },
+    {
+        "id": 810866,
+        "score": 8,
+        "date": "2010-11-15T00:00:00.000Z",
+        "studentId": 10849,
+        "subjectId": 17,
+        "topicId": 84
+    },
+    {
+        "id": 864354,
+        "score": 8,
+        "date": "2010-11-19T00:00:00.000Z",
+        "studentId": 10481,
+        "subjectId": 11,
+        "topicId": 21
+    },
+    {
+        "id": 834775,
+        "score": 8,
+        "date": "2010-11-15T00:00:00.000Z",
+        "studentId": 10950,
+        "subjectId": 34,
+        "topicId": 90
+    },
+    {
+        "id": 848680,
+        "score": 8,
+        "date": "2010-11-18T00:00:00.000Z",
+        "studentId": 10452,
+        "subjectId": 32,
+        "topicId": 56
+    },
+    {
+        "id": 859630,
+        "score": 8,
+        "date": "2010-11-16T00:00:00.000Z",
+        "studentId": 10433,
+        "subjectId": 29,
+        "topicId": 71
+    },
+    {
+        "id": 843332,
+        "score": 8,
+        "date": "2010-11-13T00:00:00.000Z",
+        "studentId": 10385,
+        "subjectId": 33,
+        "topicId": 28
+    },
+    {
+        "id": 867355,
+        "score": 8,
+        "date": "2010-11-16T00:00:00.000Z",
+        "studentId": 10558,
+        "subjectId": 7,
+        "topicId": 14
+    },
+    {
+        "id": 901466,
+        "score": 8,
+        "date": "2010-11-15T00:00:00.000Z",
+        "studentId": 10418,
+        "subjectId": 17,
+        "topicId": 14
+    },
+    {
+        "id": 869652,
+        "score": 8,
+        "date": "2010-11-18T00:00:00.000Z",
+        "studentId": 10532,
+        "subjectId": 21,
+        "topicId": 57
+    },
+    {
+        "id": 877493,
+        "score": 8,
+        "date": "2010-11-14T00:00:00.000Z",
+        "studentId": 10276,
+        "subjectId": 12,
+        "topicId": 96
+    },
+    {
+        "id": 868282,
+        "score": 8,
+        "date": "2010-11-19T00:00:00.000Z",
+        "studentId": 10562,
+        "subjectId": 33,
+        "topicId": 65
+    },
+    {
+        "id": 877648,
+        "score": 8,
+        "date": "2010-11-17T00:00:00.000Z",
+        "studentId": 10968,
+        "subjectId": 35,
+        "topicId": 13
+    },
+    {
+        "id": 903822,
+        "score": 8,
+        "date": "2010-11-18T00:00:00.000Z",
+        "studentId": 10687,
+        "subjectId": 37,
+        "topicId": 41
+    },
+    {
+        "id": 973939,
+        "score": 8,
+        "date": "2010-11-19T00:00:00.000Z",
+        "studentId": 10794,
+        "subjectId": 31,
+        "topicId": 92
+    },
+    {
+        "id": 934345,
+        "score": 8,
+        "date": "2010-11-19T00:00:00.000Z",
+        "studentId": 10930,
+        "subjectId": 5,
+        "topicId": 45
+    },
+    {
+        "id": 966917,
+        "score": 8,
+        "date": "2010-11-18T00:00:00.000Z",
+        "studentId": 10540,
+        "subjectId": 24,
+        "topicId": 3
+    },
+    {
+        "id": 969963,
+        "score": 8,
+        "date": "2010-11-18T00:00:00.000Z",
+        "studentId": 10255,
+        "subjectId": 15,
+        "topicId": 85
+    },
+    {
+        "id": 931189,
+        "score": 8,
+        "date": "2010-11-12T00:00:00.000Z",
+        "studentId": 10873,
+        "subjectId": 27,
+        "topicId": 76
+    },
+    {
+        "id": 986962,
+        "score": 8,
+        "date": "2010-11-17T00:00:00.000Z",
+        "studentId": 10272,
+        "subjectId": 26,
+        "topicId": 15
+    }
+]

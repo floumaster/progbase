@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../main.css">
+    <title>Data visualisation</title>
+</head>
+
+<body>
+    {{> navbar}}
+    <div class="dropdown">
+  <button class="dropbtn">Choose entity</button>
+  <div class="dropdown-content">
+    <a href="/filter/students">Students</a>
+    <a href="/filter/marks">Marks</a>
+    <a href="/filter/subjects">Subjects</a>
+    <a href="/filter/topics">Topic</a>
+  </div>
+</div>
+    <div class="container fullscreen dark">
+        <div class="filter-secton">
+        <form class="filter-form" action="/filter/marks/" method="GET">
+        <table class="filter-table">
+                    <tr>
+                        <td>
+                        <a>Фильтрация по определенной оценке</a>
+                        <input class="input-id" type="text" name="iddef">
+                        </td>
+                        <td colspan=2>
+                        <a>Фильтрация по интервалу оценок</a>
+                        <input class="input-id-range-left" type="text" name="idleft">
+                        <input class="input-id-range-right" type="text" name="idright">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a>Фильтрация по определенной дате</a>
+                        <input class="input-surname" type="text" name="surdef">
+                        </td>
+                        <td colspan=2>
+                        <a>Фильтрация по интервалу дат</a>
+                        <input class="input-age-range-left" type="text" name="ageleft">
+                        <input class="input-age-range-right" type="text" name="ageright">
+                        </td>
+                    </tr>
+            </table>
+            <div class="buttons">
+            <input type="submit" class="filterbtn" value="Filter">
+            <a class="analyzebtn" href="/anal_itics">Static analyze</a>
+            <a class="speed" href="/speed">Speed research</a>
+            </div>
+            <form>
+        </div>
+        <div class="output">
+            <table>
+                <tbody>
+                    {{#data}}
+            <tr>
+                <td>{{id}}</td>
+                <td>{{score}}</td>
+                <td>{{date}}</td>
+            </tr>
+            {{/data}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+                        let inputid = document.getElementsByClassName("input-id")[0];
+                        let inputidLeft = document.getElementsByClassName("input-id-range-left")[0];
+                        let inputidRight = document.getElementsByClassName("input-id-range-right")[0];
+                        let inputage = document.getElementsByClassName("input-age")[0];
+                        let inputageLeft = document.getElementsByClassName("input-age-range-left")[0];
+                        let inputageRight = document.getElementsByClassName("input-age-range-right")[0];
+                            inputid.oninput = function() {
+                                if(inputid.value){
+                                    inputidLeft.disabled = true;
+                                    inputidRight.disabled = true;
+                                    inputidLeft.value = "";
+                                    inputidRight.value = "";
+                                }
+                                else{
+                                    inputidLeft.disabled = false;
+                                    inputidRight.disabled = false;
+                                }
+                        };
+                        inputidLeft.oninput = function() {
+                                if(inputidLeft.value || inputidRight.value){
+                                    inputid.disabled = true;
+                                    inputid.value = "";
+                                }
+                                else{
+                                    inputid.disabled = false;
+                                }
+                        };
+                        inputidRight.oninput = function() {
+                                if(inputidLeft.value || inputidRight.value){
+                                    inputid.disabled = true;
+                                    inputid.value = "";
+                                }
+                                else{
+                                    inputid.disabled = false;
+                                }
+                        };
+                        inputage.oninput = function() {
+                                if(inputage.value){
+                                    inputageLeft.disabled = true;
+                                    inputageRight.disabled = true;
+                                    inputageLeft.value = "";
+                                    inputageRight.value = "";
+                                }
+                                else{
+                                    inputageLeft.disabled = false;
+                                    inputageRight.disabled = false;
+                                }
+                        };
+                        inputageLeft.oninput = function() {
+                                if(inputageLeft.value || inputageRight.value){
+                                    inputage.disabled = true;
+                                    inputage.value = "";
+                                }
+                                else{
+                                    inputage.disabled = false;
+                                }
+                        };
+                        inputageRight.oninput = function() {
+                                if(inputageLeft.value || inputageRight.value){
+                                    inputage.disabled = true;
+                                    inputage.value = "";
+                                }
+                                else{
+                                    inputage.disabled = false;
+                                }
+                        };
+                        </script>
+</body>
+
+</html>

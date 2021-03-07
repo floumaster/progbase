@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../main.css">
+    <title>Data visualisation</title>
+</head>
+<body>
+    {{> navbar}}
+    <div class="container fullscreen dark">
+    <form class="database" action="/backup/db" method="GET">
+        <input class="inputdb" type="text" name="dbname">
+        <input type="submit" class="db" value="Backup database">
+        </form>
+        <form class="table" action="/backup/tb" method="GET">
+        <input class="inputtb" type="text" name="tbname">
+        <input type="submit" class="tb" value="Backup table">
+        </form>
+        <a class="success">{{msg}}</a>
+    </div>
+</body>
+
+</html>

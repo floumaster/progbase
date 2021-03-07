@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../main.css">
+    <title>Data visualisation</title>
+</head>
+
+<body>
+    {{> navbar}}
+    <div class="container fullscreen dark">
+        <a class="query1" href="/research/rating">Общий рейтинг студентов</a>
+        <form class="rating" action="/research/subject" method="GET">
+        <input class="inputquery2" type="text" name="subject">
+        <input type="submit" class="query2" value="Средний балл студентов по предмету">
+        </form>
+        <form class="studentscore" action="/research/subjects" method="GET">
+        <input class="inputquery3" type="text" name="student">
+        <input type="submit" class="query3" value="Оценки студента по всем предметам">
+        </form>
+        <a class="analyze" href="/anal_itics">Static analyze</a>
+        <a class="chart" href="/chart">Watch graphic</a>
+        <div class="resear">
+            <table>
+                <tbody>
+                    {{#rating}}
+                        <tr>
+                            <td>{{id}}</td>
+                            <td>{{surname}}</td>
+                            <td>{{name}}</td>
+                            <td>{{patronymic}}</td>
+                            <td>{{avg}}</td>
+                        </tr>
+                    {{/rating}}
+                </tbody>
+            </table>
+            <table>
+                <tbody>
+                    {{#student}}
+                        <tr>
+                            <td>{{name}}</td>
+                            <td>{{avg}}</td>
+                        </tr>
+                    {{/student}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

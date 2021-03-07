@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../main.css">
+    <title>Data visualisation</title>
+</head>
+<body>
+    {{> navbar}}
+    <div class="container fullscreen dark">
+    <form class="database" action="/recovery/db" method="GET">
+        <input class="inputdb" type="text" name="dbname">
+        <input type="submit" class="db" value="Recovery database">
+        </form>
+        <form class="table" action="/recovery/tb" method="GET">
+        <input class="inputtb" type="text" name="tbname">
+        <input type="submit" class="tb" value="Recovery table">
+        </form>
+        <div class="databases">
+            <table>
+                <tbody>
+                    {{#databases}}
+                    <tr>
+                        <td>{{name}}</td>
+                        <td>{{date}}</td>
+                    </tr>
+                    {{/databases}}
+                </tbody>
+            </table>
+        </div>
+        <div class="tables">
+            <table>
+                <tbody>
+                    {{#tables}}
+                    <tr>
+                        <td>{{name}}</td>
+                        <td>{{date}}</td>
+                    </tr>
+                    {{/tables}}
+                </tbody>
+            </table>
+        </div>
+        <a class="success">{{msg}}</a>
+    </div>
+</body>
+
+</html>

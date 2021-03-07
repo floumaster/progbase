@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../main.css">
+    <title>Data visualisation</title>
+</head>
+
+<body>
+    {{> navbar}}
+    <div class="dropdown">
+  <button class="dropbtn">Choose entity</button>
+  <div class="dropdown-content">
+    <a href="/generate/students">Students</a>
+    <a href="/generate/marks">Marks</a>
+    <a href="/generate/subjects">Subjects</a>
+    <a href="/generate/topics">Topic</a>
+  </div>
+  
+</div>
+    <div class="container fullscreen dark">
+    <form class="action-button-wrapper" action="/generate/students/" method="GET">
+                <input class="input" type="text" name="count">
+                <input class="action-button" type="submit" value="Generate {{entity}}">
+                </form>
+        <div class="description-card">
+            <table>
+                <tbody>
+                    {{#studentsArr}}
+                    <tr>
+                        <td>{{surname}}</td>
+                        <td>{{name}}</td>
+                        <td>{{patronymic}}</td>
+                        <td>{{age}}</td>
+                    </tr>
+                    {{/studentsArr}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

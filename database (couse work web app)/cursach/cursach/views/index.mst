@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <title>Data visualisation</title>
+</head>
+
+<body>
+    {{> navbar}}
+    <div class="container fullscreen dark">
+        <div class="description-card">
+        </div>
+        <div class="action-button-wrapper">
+            <a class="action-button" href="/generate/students">Get Started</a>
+        </div>
+    </div>
+</body>
+
+</html>

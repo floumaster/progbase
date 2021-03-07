@@ -1,0 +1,22 @@
+<div class="navbar dark-grey">
+        <div class="logo">
+            <a class="logo" href="/">iDisbalance</a>
+        </div>
+        <ul class="link-items">
+            <li class="link-item">
+                <a href="/research">Research topic</a>
+            </li>
+            <li class="link-item">
+                <a href="/backup">Make backup</a>
+            </li>
+            <li class="link-item">
+                <a href="/recovery">Restore</a>
+            </li>
+            <li class="link-item">
+                <a href="/generate/students">Generate data</a>
+            </li>
+            <li class="link-item">
+                <a href="/filter/students">Filter data</a>
+            </li>
+        </ul>
+    </div>

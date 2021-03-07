@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../main.css">
+    <title>Data visualisation</title>
+</head>
+
+<body>
+    {{> navbar}}
+    <div class="dropdown">
+  <button class="dropbtn">Choose entity</button>
+  <div class="dropdown-content">
+    <a href="/filter/students">Students</a>
+    <a href="/filter/marks">Marks</a>
+    <a href="/filter/subjects">Subjects</a>
+    <a href="/filter/topics">Topic</a>
+  </div>
+</div>
+    <div class="container fullscreen dark">
+        <div class="filter-secton">
+        <form class="filter-form" action="/filter/subjects/" method="GET">
+        <table class="filter-table">
+                    <tr>
+                        <td>
+                        <a>Фильтрация по названию предмета</a>
+                        <input class="input-surname" type="text" name="surdef">
+                        </td>
+                        <td>
+                        <a>Фильтрация по началу названия</a>
+                        <input class="input-surname-start" type="text" name="surstart">
+                        </td>
+                        <td>
+                        <a>Фильтрация по концу названия</a>
+                        <input class="input-surname-end" type="text" name="surend">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a>Фильтрация по направлению предмета</a>
+                        <input class="input-name" type="text" name="namedef">
+                        </td>
+                        <td>
+                        <a>Фильтрация по началу направления</a>
+                        <input class="input-name-start" type="text" name="namestart">
+                        </td>
+                        <td>
+                        <a>Фильтрация по концу напрвления</a>
+                        <input class="input-name-end" type="text" name="nameend">
+                        </td>
+                    </tr>
+            </table>
+            <div class="buttons">
+            <input type="submit" class="filterbtn" value="Filter">
+            <a class="analyzebtn" href="/anal_itics">Static analyze</a>
+            </div>
+            <form>
+        </div>
+        <div class="output">
+            <table>
+                <tbody>
+                    {{#data}}
+            <tr>
+                <td>{{name}}</td>
+                <td>{{section}}</td>
+            </tr>
+            {{/data}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+                        let surname = document.getElementsByClassName("input-surname")[0];
+                        let surnameStart = document.getElementsByClassName("input-surname-start")[0];
+                        let surnameEnd = document.getElementsByClassName("input-surname-end")[0];
+                        let name = document.getElementsByClassName("input-name")[0];
+                        let nameStart = document.getElementsByClassName("input-name-start")[0];
+                        let nameEnd = document.getElementsByClassName("input-name-end")[0];
+                        surname.oninput = function() {
+                                if(surname.value){
+                                    surnameStart.disabled = true;
+                                    surnameEnd.disabled = true;
+                                    surnameStart.value = "";
+                                    surnameEnd.value = "";
+                                }
+                                else{
+                                    surnameStart.disabled = false;
+                                    surnameEnd.disabled = false;
+                                }
+                        };
+                        surnameStart.oninput = function() {
+                                if(surnameStart.value){
+                                    surname.disabled = true;
+                                    surnameEnd.disabled = true;
+                                    surname.value = "";
+                                    surnameEnd.value = "";
+                                }
+                                else{
+                                    surnameEnd.disabled = false;
+                                    surname.disabled = false;
+                                }
+                        };
+                        surnameEnd.oninput = function() {
+                                if(surnameEnd.value){
+                                    surname.disabled = true;
+                                    surnameStart.disabled = true;
+                                    surname.value = "";
+                                    surnameStart.value = "";
+                                }
+                                else{
+                                    surnameStart.disabled = false;
+                                    surname.disabled = false;
+                                }
+                        };
+                        name.oninput = function() {
+                                if(name.value){
+                                    nameStart.disabled = true;
+                                    nameEnd.disabled = true;
+                                    nameStart.value = "";
+                                    nameEnd.value = "";
+                                }
+                                else{
+                                    nameStart.disabled = false;
+                                    nameEnd.disabled = false;
+                                }
+                        };
+                        nameStart.oninput = function() {
+                                if(nameStart.value){
+                                    name.disabled = true;
+                                    nameEnd.disabled = true;
+                                    name.value = "";
+                                    nameEnd.value = "";
+                                }
+                                else{
+                                    nameEnd.disabled = false;
+                                    name.disabled = false;
+                                }
+                        };
+                        nameEnd.oninput = function() {
+                                if(nameEnd.value){
+                                    name.disabled = true;
+                                    nameStart.disabled = true;
+                                    name.value = "";
+                                    nameStart.value = "";
+                                }
+                                else{
+                                    nameStart.disabled = false;
+                                    name.disabled = false;
+                                }
+                        };
+                        </script>
+</body>
+
+</html>
